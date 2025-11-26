@@ -1,0 +1,33 @@
+1. ========== ES6
+ES6 is a javascript syntax improvement
+
+//==variable
+before ES5 : 
+  var x = 5;
+after ES6 :
+  //can be reassigned
+  let x = x;
+  //constant
+  const PI = 3.14;
+  
+//==arrow function
+before ES5 :
+  function add(a,b) {
+    return a + b;
+  }
+after ES6 :
+  //multiple line block
+  const result = (a,b) => {
+    return a + b;
+  }
+  //single line block
+  const result = (a,b) => a + b;
+  
+//==template literal
+const name = "Nantenaina";
+before ES5 :
+  const message = "I'm " + name;
+after ES6 ;:
+  const message = `I'm ${name}`;
+
+** test => test1.js
