@@ -36,6 +36,29 @@ try {
   //after ES6
   const test3 = `I'm ${name}`;
   //console.log(test3);
+  
+  //==destructuring
+  const object = {
+    name: 'Nantenaina',
+    age: 21
+  }
+  const arr = ["red", "blue", "green"];
+  //before ES5 :
+  const name0 = object.name; //=> Nantenaina
+  //console.log(name0);
+  const blue = arr[1] //=> blue
+  //console.log(blue);
+  
+  //after ES6 :
+  const {name: name1, age} = object; //=>name1 = "Nantenaina" , age = 21
+  //console.log(`I'm ${name1}, ${age}`);
+  
+  //reassign value of declared variables
+  let a = 1 ;
+  let b = 2;
+  const ab = {a: 14, b:25};
+  ({a,b} = ab);  //=> a = 14, b = 25;
+  console.log(`a = ${a}, b= ${b}`);
 } catch (e) {
   console.error(e);
 }

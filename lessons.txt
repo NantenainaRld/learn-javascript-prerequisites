@@ -29,5 +29,20 @@ before ES5 :
   const message = "I'm " + name;
 after ES6 ;:
   const message = `I'm ${name}`;
+  
+//==destructuring
+    const object = {
+        name: "Nantenaina",
+        age: 21
+    }
+    const arr = ["red","blue","green"];
+before ES5 :
+    const name = object.name;
+    const color = arr[1];
+after ES6 :
+    //object destructuring
+    const {name, age} = object;
+    //array destructurin
+    const [red, ,blue] = arr;
 
 ** test => test1.js
