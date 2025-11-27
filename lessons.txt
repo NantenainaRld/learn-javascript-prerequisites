@@ -44,5 +44,21 @@ after ES6 :
     const {name, age} = object;
     //array destructurin
     const [red, ,blue] = arr;
+    
+//==spread operator
+    //array spread
+    const arr1 = [1,2];
+    const arr2 = [3,4]
+    const sa = [...arr1, ...arr2] //=> [1,2,3,4]
+    //object spread
+    const person = {
+        name: "Nantenaina",
+        firstName: "Rld"
+    }
+    const detail = {
+        color: "black",
+        nationality: "Malagasy"
+    }
+    const so = {...person, ...detail} //=> {name: "Nantenaina", firstName: "Rld", color: "black", nationality: "Malagasy"}
 
 ** test => test1.js

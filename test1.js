@@ -58,7 +58,26 @@ try {
   let b = 2;
   const ab = {a: 14, b:25};
   ({a,b} = ab);  //=> a = 14, b = 25;
-  console.log(`a = ${a}, b= ${b}`);
+  //console.log(`a = ${a}, b= ${b}`);
+  
+  //==spread operator
+  //array spread
+  const arr0 = [1,2];
+  const arr1 = [3,4];
+  const sa = [...arr0, ...arr1]; //=> [1,2,3,4]
+  //console.log(sa);
+  
+  //object spread
+  const person = {
+    name: "Nantenaina",
+    age: 21
+  }
+  const detail = {
+    color: "black",
+    nationality: "Malagasy"
+  }
+  const so = {...person, ...detail} //=> {name: "Nantenaina", age: 21, color: "black", nationality: "Malagasy"}
+  //console.log(so);
 } catch (e) {
   console.error(e);
 }
