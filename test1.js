@@ -78,6 +78,23 @@ try {
   }
   const so = {...person, ...detail} //=> {name: "Nantenaina", age: 21, color: "black", nationality: "Malagasy"}
   //console.log(so);
+  
+  //==rest parameter
+  //before ES5 :
+    function arg(){
+      return arguments.length;
+    }
+    //console.log(arg(1,'hh',7)); //=> 3
+    
+  //after ES6 :
+    function arg1(...args){
+      return args.length;
+    }
+    //console.log(arg1(1,'h',7)); //=> 3
+    function sum(...number){
+      return number.reduce((acc, num) => acc + num , 0);
+    }
+    //console.log(sum(1,3,6)); //=> 10
 } catch (e) {
   console.error(e);
 }
